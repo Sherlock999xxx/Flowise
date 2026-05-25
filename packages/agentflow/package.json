@@ -90,7 +90,7 @@
         "lodash": "^4.17.21",
         "lowlight": "^3.3.0",
         "tippy.js": "^6.3.7",
-        "uuid": "^10.0.0"
+        "uuid": "^14.0.0"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^6.6.3",
