@@ -37,7 +37,7 @@
         "@uiw/codemirror-theme-sublime": "^4.21.21",
         "@uiw/codemirror-theme-vscode": "^4.21.21",
         "@uiw/react-codemirror": "^4.21.21",
-        "axios": "1.15.0",
+        "axios": "1.16.0",
         "clsx": "^1.1.1",
         "dompurify": "^3.2.6",
         "dotenv": "^16.0.0",
@@ -124,7 +124,7 @@
         "rimraf": "^5.0.5",
         "sass": "^1.42.1",
         "typescript": "^5.4.5",
-        "vite": "^5.0.2",
+        "vite": "^6.4.2",
         "vite-plugin-pwa": "^0.17.0",
         "vite-plugin-react-js-support": "^1.0.7"
     }
