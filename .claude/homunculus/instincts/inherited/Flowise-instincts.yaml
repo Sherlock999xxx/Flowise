@@ -1,0 +1,327 @@
+# Instincts generated from https://github.com/Sherlock999xxx/Flowise
+# Generated: 2026-06-11T15:44:56.617Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Flowise-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/Flowise
+---
+
+# Flowise Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump the npm_and_yarn group across 7 directories with 5 updates
+
+---
+id: Flowise-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/Flowise
+---
+
+# Flowise Commit Length
+
+## Action
+
+Write moderate-length commit messages (~76 characters)
+
+## Evidence
+
+- Average commit message length: 76 chars
+- Based on 1 commits
+
+---
+id: Flowise-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/Flowise
+---
+
+# Flowise Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Flowise-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/Flowise
+---
+
+# Flowise Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Flowise-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/Flowise
+---
+
+# Flowise Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Flowise-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/Flowise
+---
+
+# Flowise Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: Flowise-workflow-multi-package-dependency-upgrade
+trigger: "when doing multi package dependency upgrade"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/Flowise
+---
+
+# Flowise Workflow Multi Package Dependency Upgrade
+
+## Action
+
+Follow the multi-package-dependency-upgrade workflow:
+1. Identify outdated dependencies in each package.
+2. Update the version numbers in package.json files for each affected package.
+3. Update the main lockfile(s) (e.g., pnpm-lock.yaml, package-lock.json) to reflect new dependency versions.
+4. Commit all changed package.json and lockfile(s) together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: packages/*/package.json, packages/*/package-lock.json, pnpm-lock.yaml
+
+---
+id: flowise-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct File Naming
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: flowise-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: flowise-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: flowise-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: flowise-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: flowise-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: flowise-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: flowise-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct Git Commit Format
+
+## Action
+
+Use the Conventional Commits format, starting with a type prefix such as chore
+
+## Evidence
+
+- Pattern in commits.type: conventional
+- Pattern in commits.prefixes: ['chore']
+- Example: chore(deps): bump the npm_and_yarn group across 7 directories with 5 updates
+
+---
+id: flowise-instinct-multi-package-dependency-upgrade
+trigger: "When upgrading npm/yarn dependencies across multiple packages in the monorepo"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: Sherlock999xxx/Flowise
+---
+
+# Flowise Instinct Multi Package Dependency Upgrade
+
+## Action
+
+Update all affected package.json and lockfiles, then commit them together
+
+## Evidence
+
+- Workflow: multi-package-dependency-upgrade
+- Files involved: packages/*/package.json, packages/*/package-lock.json, pnpm-lock.yaml
+- Commit example: chore(deps): bump the npm_and_yarn group across 7 directories with 5 updates
+
