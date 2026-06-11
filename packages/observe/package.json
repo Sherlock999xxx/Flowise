@@ -67,7 +67,7 @@
     "dependencies": {
         "@mui/x-tree-view": "^7.25.0",
         "@tabler/icons-react": "^3.7.0",
-        "axios": "1.15.0",
+        "axios": "1.16.0",
         "date-fns": "^3.6.0",
         "flowise-react-json-view": "^1.21.7",
         "lodash": "^4.17.21",
@@ -96,7 +96,7 @@
         "rimraf": "^5.0.5",
         "ts-jest": "^29.3.2",
         "typescript": "^5.4.5",
-        "vite": "^5.0.2",
+        "vite": "^6.4.2",
         "vite-plugin-dts": "^3.7.0"
     }
 }
